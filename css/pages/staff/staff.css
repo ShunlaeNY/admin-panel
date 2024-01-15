@@ -1,0 +1,31 @@
+.session1{
+    justify-content: space-between;
+}
+.session1 >a{
+    background-color: var(--box-blue-color);
+    color: var(--secondary-color);
+    padding:10px;
+    border-radius: 6px;
+}
+.session2{
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-color: var(--secondary-color);
+}
+.session2 .grid{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.session2 .grid input,.session2 .grid select{
+    border-radius: 6px;
+    color: var(--text-gray-color);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+.session2 .grid >button{
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--box-blue-color);
+}

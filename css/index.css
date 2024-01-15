@@ -1,0 +1,145 @@
+
+.main .session1{
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+.main .session1 div{
+    border-radius: 20px;
+    color: var(--secondary-color);
+}
+.main .session1 div p:first-child{
+    font-size: 14px;
+}
+.main .session1 div p:last-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .session1 .total_earnings{
+    background-color: var(--box-blue-color);
+}
+.main .session1 .total_expenses{
+    background-color: var(--box-skyblue-color);
+}
+.main .session1 .clients{
+    background-color: var(--box-violet-color);
+}
+.main .session1 .page_visitors{
+    background-color: var(--box-lightgreen-color);
+}
+.main .session2{
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+.main .session2 >div{
+    justify-content: space-evenly;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+}
+.date{
+    border: 2px solid var(--box-blue-color);
+}
+.main .session2 .date div{
+    padding: 10px 30px;
+}
+.today{
+    background-color: var(--box-blue-color);
+}
+.filter{
+    gap: 0px;
+    background-color: var(--background-color) !important;
+}
+.filter input{
+    height: 38px;
+    border: none;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.filter div{
+    padding: 10px 0px;
+    background-color: var(--box-blue-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.filter div i{
+    padding: 0px 10px;
+}
+.session3{
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.session3 div{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    align-items: start;
+}
+.session3 .flex_row >img{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.session3 .flex_row div>p:first-child{
+    font-size: 14px;
+}
+.session3 .flex_row div>p:last-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.session4{
+    margin: 20px 0px;
+    gap: 10px;
+}
+.session4 .flex_col{
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.session4 .flex_col .flex_row{
+    justify-content: space-between;
+    background-color: var(--box-blue-color);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0px 20px;
+}
+.session4 .flex_col .flex_row div > button {
+    background-color: var(--box-skyblue-color);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    color: var(--secondary-color);
+}
+#piechart, #myChart{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.session5{
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 50px;
+    background-color: var(--secondary-color);
+}
+.session5 > p{
+    font-weight: bold;
+}
+.session5 .filter_entry{
+    justify-content: space-between;
+}
+.session5 .filter_entry div >#select_entry{
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+.session5 .filter_entry div >#select_input{
+    padding: 5px 10px;
+}
+.transition_table{
+    font-size: 14px;
+    grid-template-columns: repeat(6,1fr);
+}
+.transitions_table div{
+    border-bottom: 1px solid var(--border-gray-color);
+}
+.session5 .transition_table .flex_row{
+    align-items: center;
+}

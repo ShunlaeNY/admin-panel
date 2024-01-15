@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+
+    <link rel="stylesheet" href="/css/global/style.css">
+    <link rel="stylesheet" href="/css/pages/staff/staff.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="session grid">
+        <div class="nav flex_col">
+            <a href="/index.html" target="_self">
+                <h1>Bravis</h1>
+                <div class="flex_row">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Dashboard</p>
+                </div>
+            </a>    
+            <a href="" target="_self">
+                <div class="flex_row">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Product</p>
+                </div>
+            </a>
+            <a href="" target="_self">
+                <div class="flex_row">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Customer</p>
+                </div>
+            </a>
+            <a href="" target="_self">
+                <div class="flex_row">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Order</p>
+                </div>
+            </a>
+            <a href="" target="_self">
+                <div class="flex_row">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Staff</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="header flex_row">
+            <div class="flex_row">
+                <img src="/image/icon/bell.svg" alt="">
+                <img src="/image/icon/msg.svg" alt="">
+            </div>
+            <div class="user_profile">
+            </div>
+            
+        </div>
+        <div class="main">
+            <div class="session1 flex_row">
+                <h3>All Staffs</h3>
+                <a href="../product/add_staff.html">+ Add Staff</a>
+            </div>
+            <div class="session2">
+                <div class="grid">
+                    <input type="text" placeholder="Search By Name/ Email/ Phone number">
+                    <select name="" id="">
+                        <option value="">Admin</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="session3">
+                <table>
+                    <tr>
+                        <th class="first_title">Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Role</th>
+                        <th class="last_title">Action</th>
+                    </tr>
+                    <tr>
+                        <td>Staff1</td>
+                        <td>staff001@gmail.com</td>
+                        <td>09-123-456-789</td>
+                        <td>Admin</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Staff1</td>
+                        <td>staff001@gmail.com</td>
+                        <td>09-123-456-789</td>
+                        <td>Admin</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Staff1</td>
+                        <td>staff001@gmail.com</td>
+                        <td>09-123-456-789</td>
+                        <td>Admin</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="last_row_left">
+                            <div class="page_info">
+                                Showing 1-3 of 30
+                            </div>
+                        </td>
+                        <td colspan="3" class="last_row_right">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a class="active" href="#">1</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
