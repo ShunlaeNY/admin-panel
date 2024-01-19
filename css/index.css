@@ -28,7 +28,7 @@
     background-color: var(--box-lightgreen-color);
 }
 .main .session2{
-    padding: 10px 0px;
+    padding: 20px 0px;
     justify-content: space-between;
 }
 .main .session2 >div{
@@ -66,6 +66,7 @@
     padding: 0px 10px;
 }
 .session3{
+    /* padding: 20px 0px; */
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
@@ -116,7 +117,6 @@
 .session5{
     border-radius: 10px;
     padding: 20px;
-    line-height: 50px;
     background-color: var(--secondary-color);
 }
 .session5 > p{
@@ -133,13 +133,52 @@
 .session5 .filter_entry div >#select_input{
     padding: 5px 10px;
 }
-.transition_table{
-    font-size: 14px;
-    grid-template-columns: repeat(6,1fr);
+.session5 table th{
+    color: var(--text-title-gray-color);
 }
-.transitions_table div{
+.session5 table th,.session5 table tr{
+    background-color: var(--secondary-color);
     border-bottom: 1px solid var(--border-gray-color);
+}
+.session5 table tr:last-child{
+    border-bottom: none;
 }
 .session5 .transition_table .flex_row{
     align-items: center;
+}
+
+@media (max-width:1440px) and (min-width:768px){
+    .session2 {
+        flex-direction: column;
+    }
+    .session3{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .session4{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media (max-width:767px) and (min-width:320px){
+    .main .session1{
+        grid-template-columns: 1fr;
+    }
+    .session2 {
+        flex-direction: column;
+    }
+    .session2 .date{
+        display: none;
+    }
+    .session3{
+        grid-template-columns: 1fr;
+    }
+    .session4{
+        display: none;
+    }
+    .session5{
+        margin: 10px 0px;
+    }
+    .session5 .filter_entry{
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,65 @@
+.main .edit_product_form{
+    background-color: var(--secondary-color);
+    padding:10px;
+    border-radius: 10px;
+}
+.main .edit_product_form h3{
+    padding-left: 100px;
+}
+.main .edit_product_form .edit_product_grid
+{
+    gap: 20px !important;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    padding: 30px 50px;
+}
+.main .edit_product_form .grid input,.main .edit_product_form .grid select{
+    height: 30px;
+    width: 100%;
+    border:1px solid var(--border-gray-color);
+    border-radius: 6px;
+    background-color: #dfeafd81;
+
+}
+.product_price{
+    border-radius: 6px;
+    padding-left:5px;
+    background-color: #dfeafd81;
+    border:1px solid var(--border-gray-color);
+}
+.product_price >input{
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+.edit_product_form .edit_product_grid .size{
+    justify-content: start;
+    align-items: center !important;
+}
+.edit_product_form .edit_product_grid .size > input{
+    width: 100%;
+}
+.buttons{
+    height: 30px;
+    background-color: var(--box-blue-color);
+    color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+@media (max-width:767px) and (min-width:320px){
+    .main .edit_product_form .edit_product_grid
+    {
+        grid-template-columns: 1fr;
+        justify-content: start;
+        padding: 30px 0px;
+    }
+    .main .edit_product_form h3{
+        padding-left: 10px;
+    }
+    .edit_product_form .edit_product_grid .size{
+        gap: 10px;
+    }
+}

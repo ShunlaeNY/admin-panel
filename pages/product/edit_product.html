@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Staff</title>
+    <title>Add Product</title>
 
     <link rel="stylesheet" href="/css/global/style.css">
-    <link rel="stylesheet" href="/css/pages/staff/add_staff.css">
+    <link rel="stylesheet" href="/css/pages/product/edit_product.css">
+
+     <!-- summer note css -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"> -->
+     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -59,33 +63,63 @@
         <div class="user_profile_info">
             <a href=""><i class="fa-solid fa-gear"></i>Edit Profile</a><br>
             <a href="/account/login/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
-        </div>
+     </div>
 
         <div class="main">
-            <h4><b>Add Staff</b></h4>
-            <p>Add your staff necessary information here</p>
-            <div class="add_staff_form">
-                <div class="grid">
-                    <div>Name</div>
-                    <input type="text" placeholder="Staff Name">
-                    <div>Email</div>
-                    <input type="email">
-                    <div>Password</div>
-                    <input type="password">
-                    <div>Phone Number</div>
-                    <input type="text" placeholder="Example : 09-XXXXXX">
-                    <div>Staff Role</div>
-                    <input type="text" placeholder="Admin">
-                    <button>Cancel</button>
-                    <button>Add</button>
+            <h3>Edit product</h3>
+            <p>Edit your product and necessary information here</p>
+            <div class="edit_product_form">
+                <h3>
+                   Basic Information
+                </h3>
+                <div class="edit_product_grid grid">
+                    <div>Product Title/Name</div>
+                    <input type="text" placeholder="Polo Brown">
+
+                    <div>Product Description</div>
+                    <img src="/image/summbernote.png" alt="" style="width: 100%; height: 150px;">
+
+                    <div>Product image</div>
+                    <img src="/image/file_drag.png" alt="" style="width: 100%; height: 150px;">
+
+                    <div>Category</div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Men</option>
+                        </select><br><br>
+                        <select name="" id="">
+                            <option value="">Men Shirt</option>
+                        </select>
+                    </div>
+
+                    <div>Product Price</div>
+                    <div class="product_price flex_row">
+                        <div>MMK</div>
+                        <input type="text" placeholder="53,450MMK">
+                    </div>
+                    <div>Product Quantity</div>
+                    <input type="text" placeholder="20">
+                    <div>Size</div>
+                    <div class="size flex_row">
+                        <input type="checkbox" checked>S
+                        <input type="checkbox">M
+                        <input type="checkbox">L
+                        <input type="checkbox" checked>XL
+                        <input type="checkbox">XXL
+                    </div>
+                    <button class="buttons">Cancel</button>
+                    <button class="buttons">Add Product</button>
                 </div>
+                   
             </div>
         </div>
     </div>
+    
 
+    <!-- script -->
+    <script src="/js/user_profile_info_popup.js"></script>
 
-        <!-- script -->
-        <script src="/js/user_profile_info_popup.js"></script>
-
+    <!-- scripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,38 @@
+.session1{
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-color: var(--secondary-color);
+}
+.session1 .grid{
+    gap: 20px;
+}
+.session1 .grid input{
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    color: var(--text-gray-color);
+    background-color: #dfeafd81;
+    border: 1px solid var(--border-gray-color);
+}
+.session1 .grid .flex_row >button{
+    padding: 10px 30px; 
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--box-blue-color);
+}
+.session1 .grid .flex_row >button:last-child{
+    background-color: var(--text-title-gray-color);    
+}
+
+@media (max-width:767px) and (min-width:320px){
+    .main .session1 .grid{
+        grid-template-columns: 1fr !important;
+    }
+    table{
+        font-size: 12px;
+    }
+}
+

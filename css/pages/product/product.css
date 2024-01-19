@@ -16,9 +16,13 @@
 .session2 > .grid{
     gap: 10px;
     grid-template-columns: repeat(4,1fr);
+    align-items: end;
 }
 .session2 .grid input,.session2 .grid select{
     color: var(--text-gray-color);
+    height: 30px;
+    margin: 0;
+    padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.11);
 }
 .session2 .grid .buttons{
@@ -37,3 +41,29 @@
     background-color: var(--text-title-gray-color);
 }
   
+@media (max-width:1000px) and (min-width:768px){
+    .main .session2 .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .main .session3{
+        font-size: 14px;
+    }
+    .main .session3 table .sizes {
+        gap: 5px;
+    }
+}
+
+@media (max-width:767px) and (min-width:320px){
+    .main .session2 .grid{
+        grid-template-columns: 1fr;
+    }
+    .main .session3{
+        font-size: 10px;
+    }
+    .main .session3 table .sizes {
+        gap: 5px;
+    }
+    .box_green{
+        font-size: 10px;
+    }
+}
